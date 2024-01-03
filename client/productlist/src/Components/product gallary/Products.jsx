@@ -9,17 +9,23 @@ import {
 } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Products() {
+  const navigate = useNavigate();
   const [products, setProducts] = useState([]);
   const getProducts = async () => {
     try {
-      let response = await axios("http://localhost:3000/");
+      let response = await axios("https://product-listing-backend.vercel.app/");
 
       setProducts(response.data);
     } catch (error) {
       console.log("Error getting products: ", error);
     }
+  };
+
+  const goToProduct = async (id) => {
+    navigate(`/${id}`);
   };
 
   useEffect(() => {
@@ -31,9 +37,10 @@ function Products() {
         return (
           <Card sx={{ maxWidth: 345 }} key={product.product_id}>
             <CardMedia
-              sx={{ height: 200, objectFit: "cover" }}
+              sx={{ height: 200, objectFit: "cover", cursor: "pointer" }}
               image={product.product_img}
               title="green iguana"
+              onClick={() => goToProduct(product.product_id)}
             />
             <CardContent>
               <Typography
