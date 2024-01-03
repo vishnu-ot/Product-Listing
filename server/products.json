@@ -1,0 +1,37 @@
+[
+  {
+    "product_id": 1,
+    "product_price": 30000,
+    "product_name": "IPHONE 15 PRO",
+    "product_img": "https://im.indiatimes.in/content/2023/Sep/thai-nguyen-K4roMA5BzS0-unsplash-1_650d426ce6d6f.jpg",
+    "product_desc": "Apple has a new revelation. Currently, the new iPhone 15 line up, including iPhone 15, iPhone 15 Plus, iPhone 15 Pro, and iPhone 15 Pro Max is available in over 40 countries around the world."
+  },
+  {
+    "product_id": 2,
+    "product_price": 30000,
+    "product_name": "VIVO X70 PRO",
+    "product_img": "https://www.smartprix.com/bytes/wp-content/uploads/2021/09/Vivo-X70-Pro-Review.jpg",
+    "product_desc": "Apple has a new revelation. Currently, the new iPhone 15 line up, including iPhone 15, iPhone 15 Plus, iPhone 15 Pro, and iPhone 15 Pro Max is available in over 40 countries around the world."
+  },
+  {
+    "product_id": 3,
+    "product_price": 30000,
+    "product_name": "ASUS 8Z",
+    "product_img": "https://images1.livehindustan.com/uploadimage/library/2022/02/25/16_9/16_9_6/_1645794074.jpg",
+    "product_desc": "Apple has a new revelation. Currently, the new iPhone 15 line up, including iPhone 15, iPhone 15 Plus, iPhone 15 Pro, and iPhone 15 Pro Max is available in over 40 countries around the world."
+  },
+  {
+    "product_id": 4,
+    "product_price": 30000,
+    "product_name": "SAMSUNG S 23 ULTRA ",
+    "product_img": "https://www.ephotozine.com/articles/samsung-galaxy-s23--samsung-galaxy-s23-----samsung-galaxy-s23-ultra-hands-on-review-36366/images/highres-P1010028_1675257673.jpg",
+    "product_desc": "Apple has a new revelation. Currently, the new iPhone 15 line up, including iPhone 15, iPhone 15 Plus, iPhone 15 Pro, and iPhone 15 Pro Max is available in over 40 countries around the world."
+  },
+  {
+    "product_id": 5,
+    "product_price": 30000,
+    "product_name": "OPPO RENO 10",
+    "product_img": "https://www.91-cdn.com/hub/wp-content/uploads/2023/07/oppo-reno-10-review-images-10.jpg?tr=q-100",
+    "product_desc": "Apple has a new revelation. Currently, the new iPhone 15 line up, including iPhone 15, iPhone 15 Plus, iPhone 15 Pro, and iPhone 15 Pro Max is available in over 40 countries around the world."
+  }
+]
