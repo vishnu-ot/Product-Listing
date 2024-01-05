@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardActions,
@@ -32,7 +33,16 @@ function Products() {
     getProducts();
   }, []);
   return (
-    <Container sx={{ marginTop: "100px", display: "flex", gap: 3 }}>
+    <Box
+      sx={{
+        marginTop: "100px",
+        display: "flex",
+        flexWrap: "wrap",
+
+        width: "80%",
+        gap: 3,
+      }}
+    >
       {products?.map((product) => {
         return (
           <Card sx={{ maxWidth: 345 }} key={product.product_id}>
@@ -68,7 +78,7 @@ function Products() {
           </Card>
         );
       })}
-    </Container>
+    </Box>
   );
 }
 

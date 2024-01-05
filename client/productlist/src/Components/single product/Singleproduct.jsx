@@ -7,6 +7,7 @@ import {
   CardMedia,
   Typography,
   styled,
+  useTheme,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -16,7 +17,9 @@ function Singleproduct() {
   const [singleProduct, setSingleProduct] = useState([]);
   const getProduct = async () => {
     try {
-      const response = await axios.get(`https://product-listing-backend.vercel.app/${id}`);
+      const response = await axios.get(
+        `https://product-listing-backend.vercel.app/${id}`
+      );
       setSingleProduct(response.data);
     } catch (error) {
       console.log(error);
@@ -37,9 +40,23 @@ function Singleproduct() {
 
   return (
     <Styledbox>
-      <Card sx={{ width: 600 }}>
+      <Card
+        sx={{
+          width: {
+            xs: 350,
+            sm: 450,
+            md: 500,
+          },
+        }}
+      >
         <CardMedia
-          sx={{ height: 500 }}
+          sx={{
+            height: {
+              xs: 250,
+              sm: 300,
+              md: 400,
+            },
+          }}
           image={singleProduct.product_img}
           title="green iguana"
         />
